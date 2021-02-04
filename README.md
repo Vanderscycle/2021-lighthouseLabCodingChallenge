@@ -6,5 +6,6 @@ Usefull ressources:
 * [Git and GitHub crash course](https://www.youtube.com/watch?v=YJC6ldI3hWk)
 * [SQL when you have no clue](https://www.youtube.com/watch?v=nWeW3sCmD2k) 
 * [Pandas crash course](https://www.youtube.com/watch?v=vmEHCJofslg)
+* [Pandas amazing documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html?highlight=dataframe#pandas.DataFrame)
 * [Numpy Crash course](https://www.youtube.com/watch?v=GB9ByFAIAH4)
 * [Save your configuration with .dotfiles](https://www.youtube.com/watch?v=r_MpUP6aKiQ)
