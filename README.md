@@ -9,3 +9,6 @@ Usefull ressources:
 * [Pandas amazing documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html?highlight=dataframe#pandas.DataFrame)
 * [Numpy Crash course](https://www.youtube.com/watch?v=GB9ByFAIAH4)
 * [Save your configuration with .dotfiles](https://www.youtube.com/watch?v=r_MpUP6aKiQ)
+
+Team members:
+* [Tyler](https://github.com/Rockastanski)
