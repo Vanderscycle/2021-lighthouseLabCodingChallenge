@@ -12,3 +12,5 @@ Usefull ressources:
 
 Team members:
 * [Tyler](https://github.com/Rockastanski)
+* [Andrew](https://github.com/AndrewJohnN)
+* [Olivia](https://github.com/yjik122)
