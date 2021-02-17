@@ -14,3 +14,4 @@ Team members:
 * [Tyler](https://github.com/Rockastanski)
 * [Andrew](https://github.com/AndrewJohnN)
 * [Olivia](https://github.com/yjik122)
+* [Natalie](https://github.com/celestial-nachos)
