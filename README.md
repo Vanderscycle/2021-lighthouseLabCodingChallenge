@@ -1,4 +1,6 @@
 Official repo for team OmaeWaMouSnakuDesu for the [2021-lighthouseLab 21 days data challenge](https://data-challenge.lighthouselabs.ca/)
+How to contribute to this repo:
+* [Follow the steps](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/)
 Usefull ressources:
 * [Python style guide](https://www.python.org/dev/peps/pep-0008/)
 * [using Ananaconda](https://www.youtube.com/watch?v=YJC6ldI3hWk)
