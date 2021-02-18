@@ -1,3 +1,15 @@
+# pip install rich
+# https://github.com/willmcgugan/rich
+from rich.console import Console
+from rich.table import Table
+
+# creating a simple table
+table = Table(show_header=True, header_style="bold magenta")
+table.add_column("Item", style="dim", width=12)
+table.add_column("City Price")
+table.add_column("Country Price", justify="right")
+console = Console()
+
 # Grocery List (19 items)
 grocery_list = ['Bananas', 'Clementines', 'Baguette', 'Oat Milk', 'Olive Oil', 'Coffee Beans',
                 'Chocolate Bar', 'Brocolli', 'Eggplant', 'Chickpeas', 'Lentils', 'Tomatoes',
@@ -26,6 +38,9 @@ print()
 for i in range(len(grocery_list)):
     if i == 0: print("Grocery List\tCity Price\tCountry Price")
     print(grocery_list[i], "\t\t", city_price[i], "\t\t", country_price[i])
+    # using the for loop to add rows
+    table.add_row(str(grocery_list[i]), str(city_price[i]), str(country_price[i]))
+
 
 print()
 
@@ -43,3 +58,5 @@ elif city_sum == country_sum:
 else:
     difference_statement = f'The city is %{display_percent} less expensive.'
 print(difference_statement)
+
+console.print(table)
