@@ -32,24 +32,20 @@ percent_difference = (city_sum - country_sum) / country_sum
 display_percent = abs(round(percent_difference * 100, 2))
 print(display_percent)
 
-print()
-
 # Prints the data and adds headers, but doesn't align columns as it uses raw tabs and doesn't know the length of data in the list
 for i in range(len(grocery_list)):
-    if i == 0: print("Grocery List\tCity Price\tCountry Price")
+    if i == 0: print("\nGrocery List\tCity Price\tCountry Price")
     print(grocery_list[i], "\t\t", city_price[i], "\t\t", country_price[i])
     # using the for loop to add rows
     table.add_row(str(grocery_list[i]), str(city_price[i]), str(country_price[i]))
 
 
-print()
-
 # Another option that looks nicer, but still doesn't react to data size
 for i in range(len(grocery_list)):
-    if i == 0: print("Grocery List\t\tCity Price\tCountry Price")
+    if i == 0: print("\nGrocery List\t\tCity Price\tCountry Price")
     print("%-23s %-15s %s" %(grocery_list[i], city_price[i], country_price[i]))
 
-print("Pecent Difference = %", display_percent)
+print("\nPecent Difference = %", display_percent)
 
 if city_sum > country_sum:
     difference_statement = f'The city is %{display_percent} more expensive.'
