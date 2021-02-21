@@ -19,19 +19,21 @@ country_price = [5.49, 4.69, 4.42, 5.99, 5.99, 2.50,
 # nearby store, so they can avoid buying these items.
 #Using Python, develop a list of items that are too expensive for Dot to purchase 
 # at the nearby store
-CompareList = [0, 0, 0, 0, 0, 0, 
-               0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0]
-
-CompareListPers =  [0, 0, 0, 0, 0, 0, 
-                    0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0]
+#! better solution because doing it manually is prone to errors
+CompareList = [0]*len(cleaningsupplies_list)
+# CompareList = [0, 0, 0, 0, 0, 0, 
+#                0, 0, 0, 0, 0, 0,
+#                0, 0, 0, 0, 0, 0, 0]
+CompareListPers = [0]*len(cleaningsupplies_list)
+# CompareListPers =  [0, 0, 0, 0, 0, 0, 
+#                     0, 0, 0, 0, 0, 0,
+#                     0, 0, 0, 0, 0, 0, 0]
 x = 1.10
 
-
-BuyInCity = [False, False, False, False, False, False,
-             False, False, False, False, False, False, 
-             False, False, False, False, False, False, False]
+BuyInCity = [False]*len(cleaningsupplies_list)
+# BuyInCity = [False, False, False, False, False, False,
+#              False, False, False, False, False, False, 
+#              False, False, False, False, False, False, False]
 
 
 for i in range(len(cleaningsupplies_list)):
