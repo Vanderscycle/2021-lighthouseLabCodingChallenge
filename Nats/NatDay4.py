@@ -20,7 +20,7 @@ total_retail_price = []
 compare_list = [False, False, False, False]
 
 for i in range(len(item_list)):
-    total_retail_price[i] = retail_price[i] * amount_list[i]
+    total_retail_price.append(retail_price[i] * amount_list[i])
     total = total_retail_price[i]
     wholesale = wholesale_price_list[i]
     if total > wholesale:

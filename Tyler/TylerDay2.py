@@ -1,14 +1,15 @@
+# This broke stuff since I didn't install this yet. Commenting it out for now.
 # pip install rich
 # https://github.com/willmcgugan/rich
-from rich.console import Console
-from rich.table import Table
+#from rich.console import Console
+#from rich.table import Table
 
-# creating a simple table
-table = Table(show_header=True, header_style="bold magenta")
-table.add_column("Item", style="dim", width=12)
-table.add_column("City Price")
-table.add_column("Country Price", justify="right")
-console = Console()
+# Creating a simple table.
+#table = Table(show_header=True, header_style="bold magenta")
+#table.add_column("Item", style="dim", width=12)
+#table.add_column("City Price")
+#table.add_column("Country Price", justify="right")
+#console = Console()
 
 # Grocery List (19 items)
 grocery_list = ['Bananas', 'Clementines', 'Baguette', 'Oat Milk', 'Olive Oil', 'Coffee Beans',
@@ -36,8 +37,8 @@ print(display_percent)
 for i in range(len(grocery_list)):
     if i == 0: print("\nGrocery List\tCity Price\tCountry Price")
     print(grocery_list[i], "\t\t", city_price[i], "\t\t", country_price[i])
-    # using the for loop to add rows
-    table.add_row(str(grocery_list[i]), str(city_price[i]), str(country_price[i]))
+    # Using the for loop to add rows
+#    table.add_row(str(grocery_list[i]), str(city_price[i]), str(country_price[i]))
 
 
 # Another option that looks nicer, but still doesn't react to data size
@@ -55,4 +56,4 @@ else:
     difference_statement = f'The city is %{display_percent} less expensive.'
 print(difference_statement)
 
-console.print(table)
+#console.print(table)
