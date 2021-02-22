@@ -21,8 +21,8 @@ random.shuffle(hole_sizes)
 print(hole_sizes[:5])
 
 # Answer to Q1, the avg size of holes.
-series = pd.Series(hole_sizes)
-print(series.mean())
+seriesHoleSize = pd.Series(hole_sizes)
+print(seriesHoleSize.mean())
 
 # Answer to Q2, the average cost to fix a hole.
 cost_per_hole = list()
@@ -36,16 +36,16 @@ for i in range(len(hole_sizes)):
     else:
         cost_per_hole.append(2.10)
 
-series = pd.Series(cost_per_hole)
-print(round(series.mean(), 3))
+seriesCostHole = pd.Series(cost_per_hole)
+print(round(seriesCostHole.mean(), 3))
 
 # Answer to Q3, the total cost to fix all holes.
 print(round(sum(cost_per_hole), 2))
 
 # Answer to Bonus Q1, the biggest hole.
-series = pd.Series(hole_sizes)
-print(series.max())
+# series = pd.Series(hole_sizes)
+print(seriesHoleSize.max())
 
 # Answer to Bonus Q1, the smallest hole.
-series = pd.Series(hole_sizes)
-print(series.min())
+# series = pd.Series(hole_sizes)
+print(seriesHoleSize.min())
